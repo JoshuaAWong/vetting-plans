@@ -1,9 +1,9 @@
 ---
 name: vetting-plans
-description: 对实现方案做把关评估，判断路径是否高效、可靠、复杂度可控，并快检需求合理性。Use when 用户给出修改/开发需求并希望评估实现方案、把关 plan、确认方案是否合理，或提到「快速评估」「评估方案」「把关方案」。Also use when evaluating or reviewing implementation plans before coding.
+description: 对实现方案做把关评估，判断路径是否高效、可靠、复杂度可控，并快检需求合理性。Use when 用户给出修改/开发需求并希望评估实现方案、把关 plan、确认方案是否合理，或提到「方案把关」「评估方案」「把关方案」。Also use when evaluating or reviewing implementation plans before coding.
 ---
 
-# 快速评估
+# 方案把关
 
 对实现方案把关：路径是否高效、可靠、复杂度可控。评估对象以**方案**为主，顺带快检需求本身。
 
@@ -38,7 +38,7 @@ description: 对实现方案做把关评估，判断路径是否高效、可靠�
 
 ## 使用示例
 
-触发："快速评估一下这个方案：给许可系统加批量导入，准备用 MQ 异步 + 定时对账……"
+触发："方案把关一下这个方案：给许可系统加批量导入，准备用 MQ 异步 + 定时对账……"
 
 输出节选：
 

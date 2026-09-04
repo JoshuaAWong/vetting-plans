@@ -90,3 +90,17 @@
 ### v1.0.0
 
 - 初版：工作流 3 步 + 评估清单 8 项 + 固定输出格式 + 原则
+
+## 维护说明
+
+本地目录即 git 仓库，直连 GitHub。通过 clean/smudge 过滤器实现：仓库存 `name: vetting-plans`，本地工作区显示 `name: 方案把关`，换名全自动。
+
+日常流程：改完 `git add -A && git commit && git push` 即可。
+
+换机器 clone 后需重配过滤器（配置存在本地 `.git/config`，不随仓库走）：
+
+```bash
+git config filter.vp.clean "sed 's/^name: 方案把关$/name: vetting-plans/'"
+git config filter.vp.smudge "sed 's/^name: vetting-plans$/name: 方案把关/'"
+git checkout -f main  # 重新检出以应用 smudge
+```
